@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+         android:background="@drawable/sfbianco"
+          android:layout_width="match_parent" 
+          android:layout_height="58dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageMenuMesi"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_drawer"
+            android:background="@drawable/colore" />
+
+        <TextView
+            android:id="@+id/textAnno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:textColor="#808080"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageMese"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/calendario"
+            android:background="@drawable/colore" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageMese"
+            android:layout_alignParentBottom="true"
+            android:textColor="#808080"
+
+            android:layout_marginLeft="2dp"
+            android:text="@string/mese"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/sfo3">
+
+        <ViewFlipper
+            android:id="@+id/viewflipperA"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridViewMesi"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+        </ViewFlipper>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/barbottom"
+        android:background="@drawable/sfbianco2"
+         android:layout_width="match_parent"
+          android:layout_height="60dp"
+           android:layout_weight="0.0">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:src="@drawable/drag"
+            android:layout_marginLeft="100dp"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:src="@drawable/drag"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            />
+
+        <TextView
+            android:id="@+id/textVrestoA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="#808080"
+            android:textSize="25sp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resto"
+            android:textColor="#808080"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lavorato"
+            android:id="@+id/textView11"
+            android:textColor="#808080"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000:00"
+            android:id="@+id/textVoralavA"
+            android:textColor="#808080"
+            android:textSize="25sp"
+            android:layout_below="@+id/textView5"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pagato"
+            android:id="@+id/textView13"
+            android:textColor="#808080"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000:00"
+            android:textColor="#808080"
+            android:textSize="25sp"
+            android:id="@+id/textVpagA"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/texrestoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textSize="18sp"
+            android:text="@string/resto_anni_precedenti"
+            android:layout_below="@+id/textVpagA"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/restoannoP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:text="0"
+            android:textSize="25sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textVrestoA"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textSize="18sp"
+            android:text="Totale:"
+            android:layout_below="@+id/texrestoan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/restototale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textSize="25sp"
+            android:text="0"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/restoannoP"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

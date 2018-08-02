@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60px"
+    android:orientation="vertical"
+    android:padding="6dp" >
+    
+    <TextView 
+			android:id="@+id/date"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		  
+		    android:textSize="@dimen/text_20_16"
+		    android:textStyle="bold"
+		    android:textColor="#06C0FF"
+		    >
+</TextView>
+	<TextView 
+	    android:id="@+id/txOre"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"	
+	    android:textSize="@dimen/text_10_8"
+	    android:text=""
+	    />
+   <TextView 
+       android:id="@+id/txOrario"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       android:textSize="@dimen/text_14_12"
+       android:textStyle="bold"
+       android:textColor="#808080"
+       android:text="14:30"/>
+
+</LinearLayout>
