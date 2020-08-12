@@ -18,7 +18,6 @@ import android.widget.TextView;
         int anno;
         String[] mesi;
         Resources res;
-               // ={"Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"};
         String[] ore;
         String[] min;
         String[] orePagate;
