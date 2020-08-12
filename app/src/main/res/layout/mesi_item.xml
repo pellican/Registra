@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:padding="5dp" >
+    
+    <TextView 
+			android:id="@+id/txmesi"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:text="Gennaio"
+		    android:textSize="@dimen/text_20_16"
+		    android:textStyle="bold"
+		    android:textColor="#06C0FF"
+        >
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+	<TextView 
+	    android:id="@+id/txlav"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"	
+	    android:textSize="11sp"
+	    android:text="@string/lavorato"
+        android:textColor="#808080"
+        />
+   <TextView 
+       android:id="@+id/txOraMesi"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="@dimen/text_14_12"
+       android:textColor="#808080"
+       android:text="114"
+       android:layout_centerVertical="true"
+       android:layout_toLeftOf="@+id/txMinMesi"
+       android:layout_toStartOf="@+id/txMinMesi" />
+
+        <TextView
+            android:id="@+id/txMinMesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_14_12"
+            android:textColor="#808080"
+            android:text="00"
+            android:layout_marginRight="3dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pagato"
+        android:textSize="11sp"
+        android:id="@+id/txpag"
+        android:textColor="#808080"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textSize="@dimen/text_14_12"
+        android:id="@+id/texorepag"
+        android:textColor="#808080"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resto"
+        android:textSize="11sp"
+        android:id="@+id/textView"
+        android:textColor="#808080" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_14_12"
+        android:text="00:00"
+        android:id="@+id/texresto"
+        android:textColor="#808080"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"     />
+    </RelativeLayout>
+
+</LinearLayout>

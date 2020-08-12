@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+   	android:background="@drawable/ombra"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="252dp"
+        android:layout_height="240dp"
+        android:layout_margin="10dp"
+        android:background="#fff3f3f3"
+        android:orientation="vertical" >
+
+		<NumberPicker
+			android:id="@+id/number_oreP"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="75dp"
+			>
+
+		</NumberPicker>
+		<TextView
+			android:id="@+id/duepuntiP"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=":"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="70dp"
+			android:layout_marginTop="80dp"
+			/>
+		<NumberPicker
+			android:id="@+id/number_minP"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true">
+
+		</NumberPicker>
+		<!--
+        <TimePicker
+            android:id="@+id/timePickerP"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true" />
+		-->
+		 <Button
+		     android:id="@+id/butOkP"
+		     android:layout_width="84dp"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentBottom="true"
+		     android:layout_alignParentRight="true"
+		      android:textSize="17dp"
+		     android:text="OK" />
+
+		 <Button
+		     android:id="@+id/Button15"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentTop="true"
+		     android:layout_alignParentLeft="true"
+		     android:layout_marginLeft="10dp"
+		     android:layout_marginTop="10dp"
+		     android:text="15 Min" />
+
+		 <Button
+		     android:id="@+id/Button30"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignLeft="@+id/Button15"
+		     android:layout_below="@+id/Button15"
+		      android:layout_marginTop="10dp"
+		      android:text="30 Min" />
+
+		 <Button
+		     android:id="@+id/Button45"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_alignLeft="@+id/Button30"
+		     android:layout_below="@+id/Button30"
+		      android:layout_marginTop="10dp"
+		     android:text="45 Min" />
+
+		 <Button
+		     android:id="@+id/butAnnP"
+		     android:layout_width="84dp"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentBottom="true"
+		     android:layout_centerHorizontal="true"
+		     android:text="@string/annulla"
+		     android:textSize="17dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

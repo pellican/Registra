@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/sfbianco"
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageMenuBack"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/colore"
+            android:src="@drawable/ic_drawer" />
+
+        <TextView
+            android:id="@+id/textBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/opzioni"
+            android:textColor="#808080"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/sfo3">
+
+
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:id="@+id/RelativeLayoutBackup"
+               android:layout_height="100dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="10dp"
+               android:background="#ffffff">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/backup"
+                   android:id="@+id/textView2"
+                   android:textSize="25sp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                    />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/verra_creato_un_backup_nella_scheda_sd"
+                   android:id="@+id/textView8"
+                   android:layout_below="@+id/textView2"
+                   android:layout_alignLeft="@+id/textView2"
+                   android:layout_alignStart="@+id/textView2" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:layout_margin="10dp"
+               android:id="@+id/RelativeLayoutRipris"
+               android:background="#ffffff"
+               android:layout_below="@+id/RelativeLayoutBackup"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/ripristino"
+                   android:id="@+id/textV1"
+                   android:textSize="25sp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/verra_ripristinato_il_backup_dalla_scheda_sd"
+                   android:id="@+id/textV2"
+                   android:layout_below="@+id/textV1"
+                   android:layout_alignLeft="@+id/textV1"
+                   android:layout_alignStart="@+id/textV1" />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:layout_margin="10dp"
+               android:id="@+id/RelativeLayoutCanc"
+               android:background="#ffffff"
+               android:layout_below="@+id/RelativeLayoutRipris"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentStart="true">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/cancella_dati"
+                   android:id="@+id/textV4"
+                   android:textSize="25sp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentStart="true"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/verranno_cancellati_tutti_i_dati_dell_aplicazione"
+                   android:id="@+id/textV5"
+                   android:layout_below="@+id/textV4"
+                   android:layout_alignLeft="@+id/textV4"
+                   android:layout_alignStart="@+id/textV4" />
+           </RelativeLayout>
+
+       </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/sfbianco2" >
+    </RelativeLayout>
+
+</LinearLayout>

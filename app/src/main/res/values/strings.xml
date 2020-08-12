@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Agenda ore</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="oo" translatable="false">00:00</string>
+    <string name="aperto">aperto</string>
+    <string name="chiuso">chiuso</string>
+    <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="msg_db_location" translatable="false">Backup....</string>
+    <string name="restore_done">Ripristino Ok....</string>
+    <string name="bannerId" translatable="false">ca-app-pub-8361211670031398/6429565666</string>
+    <string name="ore_totale">Ore Totale:</string>
+    <string name="ora_inizio">Ora inizio :</string>
+    <string name="pause">Pause</string>
+    <string name="fine_mattino">Fine mattino</string>
+    <string name="inizio_pomerigio">Inizio Pomeriggio</string>
+    <string name="fine_lavoro">Fine lavoro</string>
+    <string name="salva">salva</string>
+    <string name="mese">Mese</string>
+    <string name="resto">Resto</string>
+    <string name="lavorato">Lavorato</string>
+    <string name="pagato">Pagato</string>
+    <string name="opzioni">Opzioni</string>
+    <string name="backup">Backup</string>
+    <string name="verra_creato_un_backup_nella_scheda_sd">Verrà Creato un Backup nella Scheda SD</string>
+    <string name="ripristino">Ripristino</string>
+    <string name="verra_ripristinato_il_backup_dalla_scheda_sd">Verrà Ripristinato il Backup dalla Scheda SD</string>
+    <string name="cancella_dati">Cancella Dati</string>
+    <string name="verranno_cancellati_tutti_i_dati_dell_aplicazione">Verranno Cancellati Tutti i Dati Dell\'Applicazione</string>
+    <string name="annulla">Annulla</string>
+    <string name="anno">Anno</string>
+    <string name="gennaio">Gennaio</string>
+    <string name="febbraio">Febbraio</string>
+    <string name="marzo">Marzo</string>
+    <string name="aprile">Aprile</string>
+    <string name="maggio">Maggio</string>
+    <string name="giugno">Giugno</string>
+    <string name="luglio">Luglio</string>
+    <string name="agosto">Agosto</string>
+    <string name="settembre">Settembre</string>
+    <string name="ottobre">Ottobre</string>
+    <string name="novembre">Novembre</string>
+    <string name="dicembre">Dicembre</string>
+    <string name="vuoi_salvare">Vuoi Salvare..</string>
+    <string name="salvato_nella">Salvato nella cartella</string>
+    <string name="cancella_tutto">CANCELLA TUTTO !</string>
+    <string name="giorni">Giorni</string>
+    <string name="mesi">Mesi</string>
+    <string name="dati_cancellati">Dati Cancellati</string>
+    <string name="ripristina_dati">Ripristina Dati</string>
+    <string name="database_esistente">DATABASE ESISTENTE !</string>
+    <string name="vuoi_aggiornare">Vuoi Aggiornare..</string>
+    <string name="si">SI</string>
+    <string name="vuoi_ripristinare">Vuoi Ripristinare..</string>
+    <string name="modifica">modifica</string>
+    <string name="gia_salvato">già salvato</string>
+    <string name="elimina">Elimina</string>
+    <string name="vuoi_eliminare">Vuoi Eliminare..</string>
+    <string name="errore">ERRORE !</string>
+    <string name="controlla_i_dati">Controlla i dati</string>
+    <string name="crea_backup">crea un nuovo backup ?</string>
+    <string name="vioi_modificare">Vuoi Modificare..</string>
+    <string name="dati_salvati">Dati Salvati..</string>
+    <string name="resto_anni_precedenti">Resto Anni Precedenti:</string>
+    <string name="premi">Premi di nuovo per uscire..</string>
+    <string name="info" translatable="false">Agenda Ore V.2.1.1</string>
+    <string name="setta">Setta</string>
+</resources>

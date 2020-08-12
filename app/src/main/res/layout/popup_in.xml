@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+   	android:background="@drawable/ombra"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="252dp"
+        android:layout_height="230dp"
+        android:layout_margin="10dp"
+        android:background="#fff3f3f3"
+        android:orientation="vertical" >
+
+		<NumberPicker
+			android:id="@+id/number_ore"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="75dp"
+			>
+
+		</NumberPicker>
+		<TextView
+			android:id="@+id/duepunti"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text=":"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="70dp"
+			android:layout_marginTop="80dp"
+			/>
+		<NumberPicker
+			android:id="@+id/number_min"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true">
+
+		</NumberPicker>
+		<!--
+        <TimePicker
+            android:id="@+id/timePicker1"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true" />
+		-->
+        <Button
+            android:id="@+id/tmP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="00:00"
+            android:textSize="25dp" />
+         <Button
+		     android:id="@+id/tmP2"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_below="@+id/tmP1"
+		     android:layout_marginTop="20dp"
+		     android:layout_marginLeft="10dp"
+		     android:text="00:00"
+		     android:textSize="25dp" />
+
+		 <Button
+		     android:id="@+id/butSet"
+		     android:layout_width="84dp"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentBottom="true"
+		     android:layout_alignParentLeft="true"
+		     android:textSize="17dp"
+		     android:text="@string/setta" />
+
+		 <Button
+		     android:id="@+id/butAnn"
+		     android:layout_width="84dp"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentBottom="true"
+		     android:layout_toRightOf="@+id/butSet"
+		      android:textSize="17dp"
+		     android:text="@string/annulla" />
+
+		 <Button
+		     android:id="@+id/butOk"
+		     android:layout_width="84dp"
+		     android:layout_height="wrap_content"
+		     android:layout_alignParentBottom="true"
+		     android:layout_alignParentRight="true"
+		      android:textSize="17dp"
+		     android:text="OK" />
+
+		
+
+    </RelativeLayout>
+
+</LinearLayout>
