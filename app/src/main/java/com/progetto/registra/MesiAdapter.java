@@ -4,10 +4,10 @@
     import android.content.res.Resources;
     import android.database.Cursor;
     import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.TextView;
+    import android.view.View;
+    import android.view.ViewGroup;
+    import android.widget.BaseAdapter;
+    import android.widget.TextView;
 
     import com.progetto.registra.database.DbAdapterMesi;
 
@@ -49,7 +49,9 @@ import android.widget.TextView;
             TextView txmesi,txore,txmin,txpagate,txresto,tx;
             if (convertView == null) {  // if it's not recycled, initialize some attributes
                 LayoutInflater vis = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                v = vis.inflate(R.layout.mesi_item, null);
+                if (vis != null) {
+                    v = vis.inflate(R.layout.mesi_item, null);
+                }
             }
           //  tx=(TextView)v.findViewById(R.id.tx);
 
