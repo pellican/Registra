@@ -266,9 +266,9 @@ public int mAnno, mMese;
 
             if (id == 0) {
                 backupDialog();
-                me.createContact(mese, anno, oreS, minutiS, zero, oreS);
+                me.createContact(mese, anno, oreS, minutiS, zero, zero);
             } else {
-                me.updateContact(id, mese, anno, oreS, minutiS, cursor.getString(5), oreS);
+                me.updateContact(id, mese, anno, oreS, minutiS, cursor.getString(5), cursor.getString(6));
             }
             cursor.close();
             me.close();
