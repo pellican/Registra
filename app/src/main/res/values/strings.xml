@@ -67,4 +67,5 @@
     <string name="premi">Premi di nuovo per uscire..</string>
     <string name="info" translatable="false">Agenda Ore V.2.1.1</string>
     <string name="setta">Setta</string>
+    <string name="resto_fin_qui">Monte ore fino a quì</string>
 </resources>

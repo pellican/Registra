@@ -36,7 +36,6 @@
        android:layout_height="wrap_content"
        android:textSize="@dimen/text_14_12"
        android:textColor="#808080"
-       android:text="114"
        android:layout_centerVertical="true"
        android:layout_toLeftOf="@+id/txMinMesi"
        android:layout_toStartOf="@+id/txMinMesi" />
@@ -47,7 +46,7 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_14_12"
             android:textColor="#808080"
-            android:text="00"
+
             android:layout_marginRight="3dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
@@ -71,7 +70,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="00:00"
+
         android:textSize="@dimen/text_14_12"
         android:id="@+id/texorepag"
         android:textColor="#808080"
@@ -97,7 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/text_14_12"
-        android:text="00:00"
+
         android:id="@+id/texresto"
         android:textColor="#808080"
         android:layout_alignParentRight="true"

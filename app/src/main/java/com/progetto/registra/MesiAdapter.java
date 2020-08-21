@@ -4,10 +4,10 @@
     import android.content.res.Resources;
     import android.database.Cursor;
     import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
-import android.widget.TextView;
+    import android.view.View;
+    import android.view.ViewGroup;
+    import android.widget.BaseAdapter;
+    import android.widget.TextView;
 
     import com.progetto.registra.database.DbAdapterMesi;
 
@@ -18,7 +18,6 @@ import android.widget.TextView;
         int anno;
         String[] mesi;
         Resources res;
-               // ={"Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"};
         String[] ore;
         String[] min;
         String[] orePagate;
@@ -50,24 +49,27 @@ import android.widget.TextView;
             TextView txmesi,txore,txmin,txpagate,txresto,tx;
             if (convertView == null) {  // if it's not recycled, initialize some attributes
                 LayoutInflater vis = (LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                v = vis.inflate(R.layout.mesi_item, null);
+                if (vis != null) {
+                    v = vis.inflate(R.layout.mesi_item, null);
+                }
             }
           //  tx=(TextView)v.findViewById(R.id.tx);
 
 
             txmesi=(TextView)v.findViewById(R.id.txmesi);
             txore=(TextView)v.findViewById(R.id.txOraMesi);
-            txore.setVisibility(View.INVISIBLE);
+           // txore.setVisibility(View.INVISIBLE);
             txmin=(TextView)v.findViewById(R.id.txMinMesi);
             txpagate=(TextView)v.findViewById(R.id.texorepag);
             txresto=(TextView)v.findViewById(R.id.texresto);
 
             if (ore[position] != null){
-                txore.setVisibility(View.VISIBLE);
+              //  txore.setVisibility(View.VISIBLE);
+                txore.setText(ore[position]+":");
             }
 
             txmesi.setText(mesi[position]);
-            txore.setText(ore[position]+":");
+
             txmin.setText(min[position]);
             txpagate.setText(orePagate[position]);
             txresto.setText(resto[position]);

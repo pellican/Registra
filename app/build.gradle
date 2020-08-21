@@ -9,12 +9,12 @@ android {
             storePassword 'pellican'
         }
     }
-    compileSdkVersion 17
-    buildToolsVersion '28.0.1'
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
     defaultConfig {
         applicationId 'com.progetto.registra'
         minSdkVersion 15
-        targetSdkVersion 17
+        targetSdkVersion 29
         versionCode 11
         versionName '2.1.1'
         signingConfig signingConfigs.config

@@ -171,11 +171,28 @@ public class Frammento_Anno extends Fragment{
         Button ann=(Button)m.findViewById(R.id.buttonann);
         Button ok=(Button)m.findViewById(R.id.buttonok);
         TextView oreT=(TextView)m.findViewById(R.id.textVidimeOre);
+        if (ore != null) oreT.setText(ore);
         final TextView orePag=(TextView)m.findViewById(R.id.textVidimeOrepag);
-        oreT.setText(ore);
         final ImageView x=(ImageView)m.findViewById(R.id.imageX);
         final EditText ed=(EditText)m.findViewById(R.id.editText);
         final ImageView mati=(ImageView)m.findViewById(R.id.imageMatita);
+        final TextView oreRest=(TextView)m.findViewById(R.id.textRestFinOre);
+        final DbAdapterMesi db = new DbAdapterMesi(getActivity());
+        db.open();
+        Cursor _c = db.fetchContactsByMese("" + posizion, "" + anno);
+        long _id =0;
+        if (_c.moveToFirst()) {
+            _id = _c.getLong(0);
+        }
+        if (_id != 0){
+            Cursor b = db.CercaFinoAlMeseId(_id);
+            if (b.moveToFirst()){
+                
+                oreRest.setText(b.getString(6));
+            }
+
+        }
+
         x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -214,8 +231,6 @@ public class Frammento_Anno extends Fragment{
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DbAdapterMesi db = new DbAdapterMesi(getActivity());
-                db.open();
                 Cursor c = db.fetchContactsByMese("" + posizion, "" + anno);
                 long id = 0;
                 if (c.moveToFirst()) {

@@ -87,6 +87,12 @@ public class DbAdapterMesi {
         String where = "anno=?";
         return this.database.query( DATABASE_TABLE, new String[]{KEY_CONTACTID,KEY_MESE, KEY_ANNO, KEY_ORE, KEY_MINUTI, KEY_PAGATO,KEY_RESTO}, where,new String[]{anno}, null, null,null);
     }
-
+    public Cursor fetchFinoAlMeseId(String id ){
+        String where = "_id BETWEEN ? AND ?";
+        return  this.database.query(DATABASE_TABLE,new String[]{KEY_CONTACTID,KEY_MESE, KEY_ANNO, KEY_ORE, KEY_MINUTI, KEY_PAGATO,KEY_RESTO},where,new String[]{"0",id},null,null,null);
+    }
+    public Cursor CercaFinoAlMeseId(long id){
+        return  this.database.rawQuery("SELECT * FROM "+DATABASE_TABLE+" where _id BETWEEN 0 AND "+id,null);
+    }
 
 }
