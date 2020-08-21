@@ -58,19 +58,24 @@
 
             txmesi=(TextView)v.findViewById(R.id.txmesi);
             txore=(TextView)v.findViewById(R.id.txOraMesi);
-           // txore.setVisibility(View.INVISIBLE);
+
             txmin=(TextView)v.findViewById(R.id.txMinMesi);
             txpagate=(TextView)v.findViewById(R.id.texorepag);
             txresto=(TextView)v.findViewById(R.id.texresto);
 
             if (ore[position] != null){
-              //  txore.setVisibility(View.VISIBLE);
-                txore.setText(ore[position]+":");
+                txore.setText(ore[position]);
+            }else {
+                txore.setText("");
             }
 
             txmesi.setText(mesi[position]);
+            if (min[position] != null){
+                txmin.setText(":"+min[position]);
+            }else {
+                txmin.setText("");
+            }
 
-            txmin.setText(min[position]);
             txpagate.setText(orePagate[position]);
             txresto.setText(resto[position]);
             return v;

@@ -171,12 +171,14 @@ public class Frammento_Anno extends Fragment{
         Button ann=(Button)m.findViewById(R.id.buttonann);
         Button ok=(Button)m.findViewById(R.id.buttonok);
         TextView oreT=(TextView)m.findViewById(R.id.textVidimeOre);
-        if (ore != null) oreT.setText(ore);
+
+
         final TextView orePag=(TextView)m.findViewById(R.id.textVidimeOrepag);
         final ImageView x=(ImageView)m.findViewById(R.id.imageX);
         final EditText ed=(EditText)m.findViewById(R.id.editText);
         final ImageView mati=(ImageView)m.findViewById(R.id.imageMatita);
-        final TextView oreRest=(TextView)m.findViewById(R.id.textRestFinOre);
+        final TextView MontoreRest=(TextView)m.findViewById(R.id.textRestFinOre);
+        final TextView restoOre= (TextView)m.findViewById(R.id.textRestoOre);
         final DbAdapterMesi db = new DbAdapterMesi(getActivity());
         db.open();
         Cursor _c = db.fetchContactsByMese("" + posizion, "" + anno);
@@ -186,17 +188,36 @@ public class Frammento_Anno extends Fragment{
         }
         if (_id != 0){
             Cursor b = db.CercaFinoAlMeseId(_id);
-            if (b.moveToFirst()){
-                
-                oreRest.setText(b.getString(6));
+            if (b.getCount() != 0 && b.moveToFirst()){
+                String [] monteOreS = new String[b.getCount()];
+                int [] monteOreI = new int[b.getCount()];
+                int monteOre = 0;
+                for (int i =0;i < b.getCount();i++){
+                    monteOreS [i] = b.getString(6);
+                    monteOreI [i] = Integer.parseInt(monteOreS[i]);
+                    b.moveToNext();
+                    monteOre=monteOre+monteOreI[i];
+                }
+                MontoreRest.setText(String.valueOf(monteOre));
             }
 
+        }
+
+        if (ore != null && ore != "") {
+            oreT.setText(ore);
+            if (orepagate != null && orepagate !=""){
+              int oreI= Integer.parseInt(ore);
+              int oreP= Integer.parseInt(orepagate);
+                int oret=oreI-oreP;
+                restoOre.setText(String.valueOf(oret));
+            }
         }
 
         x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 orePag.setVisibility(View.INVISIBLE);
+                restoOre.setVisibility(View.INVISIBLE);
                 x.setVisibility(View.INVISIBLE);
                 mati.setVisibility(View.VISIBLE);
             }
@@ -205,9 +226,10 @@ public class Frammento_Anno extends Fragment{
             @Override
             public void onClick(View v) {
                 ed.setVisibility(View.VISIBLE);
-
+                ed.requestFocus();
                 InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.showSoftInput(ed, InputMethodManager.SHOW_IMPLICIT);
+             
                 mati.setVisibility(View.INVISIBLE);
             }
         });

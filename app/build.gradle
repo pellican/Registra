@@ -15,8 +15,8 @@ android {
         applicationId 'com.progetto.registra'
         minSdkVersion 15
         targetSdkVersion 29
-        versionCode 11
-        versionName '2.1.1'
+        versionCode 15
+        versionName '2.1.5'
         signingConfig signingConfigs.config
     }
     buildTypes {
